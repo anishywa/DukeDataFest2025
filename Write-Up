@@ -1,0 +1,22 @@
+Goal  // Guiding Question: 
+Do state/local economies bounce back effectively enough from natural disasters to warrant businesses investing in areas with a high risk of natural disasters?
+Rationale // Motivations:
+Climate change is rapidly increasing the rate at which natural disasters occur, with many cities being in high-risk zones.
+Evaluation of local/state economies’ resilience to natural disasters is key to deciding whether businesses, both small and large, should invest in expansion/locations in high-risk zones, observing whether it is financially wise to invest in office space and real estate in these areas.
+Data Collection // Additional Sources:
+Compiled a list of 18 natural disasters that affected the United States, creating a CSV file recording what quarter of the year the disaster took place in, specific states that were affected, total estimated damages, and disaster.
+Leveraged Kaggle, a popular platform for data science professionals, to find data about total disaster count over time and total natural disaster count per state, using the following links:
+https://www.kaggle.com/datasets/willianoliveiragibin/natural-disasters-increasing 
+https://www.kaggle.com/datasets/samaneheslamifar/natural-disasters 
+Pulled the Real GDP by state from the US Bureau of Economic Analysis to analyze changes before, during, and after natural disasters using the following link:
+https://apps.bea.gov/itable/?ReqID=70&step=1&_gl=1*1coaqq6*_ga*MTA3NTE3MDUxOS4xNzQzODkxNDQw*_ga_J4698JNNFT*MTc0Mzk0NjIxNy4zLjEuMTc0Mzk0NjIyOC40OS4wLjA 
+Data Analysis Methodology:
+Utilized Jupyter notebooks to analyze the data, plot our visualizations, and find trends within the data.
+For analyzing unemployment before, after, and during natural disasters, numerous data cleaning and transformation steps were performed to make all the data comparable, and then average unemployment was computed in the two quarters before, the quarter of, and the two quarters after. A statistically significant difference was found at a 90% confidence interval after running a T-test, with a p-value of 0.067.
+Ran a series of T-tests to find potential correlations between pre/post-natural disaster quarters and rent prices & pre/post-natural disaster quarters and availability proportions.
+To analyze the total savings before and after natural disasters, we compiled the list of data points (leases) for each of the natural disasters analyzed. After this grouping, we ran a T-test to analyze whether there was a statistical significance between rent prices before and after the natural disaster, which yielded a statistical significance for most of the disasters. After this analysis, we determined the average cost savings for each disaster by utilizing this equation: [(Average rent price/ft2 before) - (Average rent price /ft2 after)]* (Average square foot of leased property in disaster area), which allowed us to determine how much tenants saved in $USD, after the natural disasters due to decreasing rent prices. 
+Conclusions // Direction:
+In analyzing the data, we found that local/state economies rebound very effectively from natural disasters, with unemployment going down and GDP going up.
+This shows that investments into areas with high risk of natural disasters is not financially unwise.
+Investments into areas affected recently by natural disasters could be economically viable for businesses, as rent prices often go down after these events due to landlords trying to fill their vacancies. Additionally, companies can often save money if they lease in areas shortly after a natural disaster. Overall, despite the acceleration of climate change, there seems to be no short-term effect on corporate real estate. 
+Despite these findings, it still is wise to reserve judgment for the long-term effects of climate change, as there is not enough data on the effects of global warming on the long-term state of local and state economies with an elevated number of natural disasters.
